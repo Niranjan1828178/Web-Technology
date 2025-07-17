@@ -1,0 +1,66 @@
+<!-- form  using tables for register -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+<nav>
+      <table width="100%" bgcolor="#cecff">
+        <tr>
+          <td width="50%">
+            <img
+              src="./assets/images-removebg-preview.png"
+              width="10%"
+              height="10%"
+            />
+          </td>
+          <td><i class="fa-solid fa-house"></i>&nbsp; <a href="./index.html"> Home</a></td>
+          <td>
+            <i class="fa-solid fa-right-to-bracket"></i> &nbsp;
+            <a href="./login.html"> Login</a>
+          </td>
+          <td>
+            <i class="fa-solid fa-address-card"></i>&nbsp;
+            <a href="#">Register</a>
+          </td>
+          <td>
+            <i class="fa-solid fa-address-book"></i>&nbsp;
+            <a href="./Contact.html">Contact</a>
+          </td>
+        </tr>
+      </table>
+    </nav>
+
+    <form action="index.html" method="post">
+        <table width="70%" border="1" align="center" cellspacing="10" cellpadding="10"> 
+            <tr>
+                <td colspan="2" align="center"><h1>Register</h1></td>
+            </tr>
+            <tr>
+                <td><label for="username">Username:</label></td>
+                <td><input type="text" id="username" name="username" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password:</label></td>
+                <td><input type="password" id="password" name="password" required></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><button type="submit">Register</button></td>
+            </tr>
+        </table>
+    </form>
+</html>

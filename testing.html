@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+}
+section {
+    position: relative; /* Needed for z-index context */
+}
+.light-section { background-color: #fff; color: #333; }
+.dark-section { background-color: #222; color: #eee; }
+
+.content {
+    padding: 4rem 2rem;
+    min-height: 80vh;
+}
+
+/* 1. The main sticky header (text only) */
+.main-header {
+    position: sticky;
+    top: 0;
+    z-index: 10; /* Must be on top */
+    padding: 1rem 2rem;
+    
+    background-color: transparent; /* No background */
+    color: white; /* Base text color is white */
+    
+    /* The key to the effect! */
+    mix-blend-mode: difference;
+}
+
+/* 2. The background fill elements */
+.header-fill {
+    position: sticky;
+    top: 0;
+    z-index: 5; /* Behind the main header */
+    
+    /* Must have the same height as the main header */
+    height: 57px; /* Adjust to your header's exact height */
+}
+
+/* 3. The color for each section's fill */
+.header-fill.light {
+    background-color: #fff;
+}
+.header-fill.dark {
+    background-color: #222; /* Or any dark color */
+}</style>
+</head>
+<body>
+    <header class="main-header">
+        <nav>Adaptive Navigation</nav>
+    </header>
+
+    <main>
+        <!-- LIGHT SECTION -->
+        <section class="light-section">
+            <div class="header-fill light"></div>
+            <div class="content">
+                <h2>Light Section</h2>
+                <p>Header text should be black here.</p>
+            </div>
+        </section>
+
+        <!-- DARK SECTION -->
+        <section class="dark-section">
+            <div class="header-fill dark"></div>
+            <div class="content">
+                <h2>Dark Section</h2>
+                <p>Header text should be white here.</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

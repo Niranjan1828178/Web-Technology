@@ -1,0 +1,25 @@
+@import url("./style2.css");
+    *{
+        margin: 0;
+        padding: 0;
+
+    }
+    html{
+              height: 100%;
+    }
+    body{
+        background-image: linear-gradient(purple,blue);
+        background-repeat: no-repeat;
+     
+    }
+    .inner{
+            margin: auto;
+            margin-top: 15%;
+            background-color: rgb(5, 35, 91);
+            width: 40vmin;
+            height: 40vmin;
+            border-radius: 50%;
+            align-content: center;
+        }
+    
+  

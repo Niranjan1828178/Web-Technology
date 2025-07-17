@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      table{
+        width: 100vw;
+        height: 100vh;
+        border-collapse: collapse;
+      }
+      #header{
+        background-color:red;
+        height: 15vh;
+      }
+      #nav{
+        background-color: skyblue;
+        height: 10vh;
+      }
+      #section{
+        background-color: rgb(238, 222, 44);
+      }
+      #aside{
+        background-color: rgb(181, 23, 179);
+      }
+      #article{
+        background-color: orange;
+      }
+      #footer{
+        background-color:black;
+        color: white;
+        height: 15vh;
+      }
+    </style>
+  </head>
+  <body>
+    <table border="1">
+      <tr>
+        <th colspan="5" id="header">Header</th>
+      </tr>
+      <tr>
+        <th colspan="5" id="nav">Nav</th>
+      </tr>
+      <tr>
+        <th colspan="3" rowspan="2" id="section">Section</th>
+      </tr>
+      <tr>
+        <th colspan="2" rowspan="3" id="aside">Aside</th>
+      </tr>
+      <tr>
+        <th colspan="3" rowspan="2" id="article">Article</th>
+      </tr>
+      <tr></tr>
+      <tr>
+        <th colspan="5" id="footer">Footer</th>
+      </tr>
+      <tr></tr>
+    </table>
+  </body>
+</html>

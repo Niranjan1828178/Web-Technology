@@ -1,0 +1,83 @@
+<!-- use tables to align the below form -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Forms</legend>
+        <form>
+        <table  cellpadding="0" cellspacing="20">
+            <tr>
+                <th><label for="name">Name:</label></th>
+                <td><input type="text" id="name" name="name"></td>
+            </tr>
+            <tr>
+                <th><label for="email">Email:</label></th>
+                <td><input type="email" id="email" name="email"></td>
+            </tr>
+            <tr>
+                <th><label for="password">Password:</label></th>
+                <td><input type="password" id="password" name="password"></td>
+            </tr>
+            <tr>
+                <th><label for="cpassword">Confirm Password:</label></th>
+                <td><input type="password" id="cpassword" name="cpassword"></td>
+            </tr>
+            <tr>
+                <th><label>Gender:</label></th>
+                <td>
+                    <input type="radio" name="gender" value="male" id="male">MALE
+                    <input type="radio" name="gender" value="female" id="female">FEMALE
+                </td>
+            </tr>
+            <tr>
+                <th><label for="skills">Skills: </label></th>
+                <td>
+                    <table>
+                   <tr><td><input type="checkbox" name="skills" value="html" id="html">HTML</td></tr> 
+                     <tr><td><input type="checkbox" name="skills" value="css" id="css">CSS</td></tr>
+                        <tr><td><input type="checkbox" name="skills" value="javascript" id="javascript">JavaScript</td></tr>
+                        <tr><td><input type="checkbox" name="skills" value="python" id="python">Python</td></tr>
+                        <tr><td><input type="checkbox" name="skills" value="java" id="java">Java</td></tr>
+                    
+                </table>
+                </td>
+            </tr>
+            <tr>
+                <th><label for="country">Country:</label></th>
+                <td>
+                    <select name="country" id="country">
+                        <option value="india">India</option>
+                        <option value="usa">USA</option>
+                        <option value="canada">Canada</option>
+                        <option value="australia">Australia</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th><label for="resume">Resume</label></th>
+                <td>
+                    <input type="file" id="resume" name="resume"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <button type="submit">Submit</button>
+                </td>
+            </tr>
+            <tr>
+                <th><label for="description">Description</label></th>
+                <td><textarea rows="10" cols="10" maxlength="10"></textarea></td>
+            </tr>
+            <tr>
+                <th><label for="description">Age</label></th>
+                <td><input type="range" min="18" max="30"></td>
+            </tr>
+        </table>
+    </form>
+    </fieldset>
+</body>
+</html>

@@ -1,0 +1,26 @@
+   .middle{
+             margin:auto;
+            background-color: white;
+            width: 30vmin;
+            height: 30vmin;
+            border-radius: 50%;
+            align-content: center;
+        }
+        
+            .outer{
+                margin: auto;
+            background-color: rgb(5, 3, 77);
+            width: 20vmin;
+            height: 20vmin;
+            border-radius: 50%;
+        }
+        .outer:hover{
+            background-color: rgb(133, 234, 70);
+        }
+        .inner:hover{
+            background-color: rgb(38, 184, 233);
+        }
+        .middle:hover{
+            background-color: rgb(207, 70, 234);
+        }
+        

@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #02308a;
+    font-family: Arial, sans-serif;;
+}
+.box >p{
+ text-align: center;
+ height: 10vmax;
+ padding-top:3vmax ;
+}
+.inner-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #02308a;
+
+}
+.inner-box>p{
+    text-align: center;
+    font-size: larger;
+    padding-left: 0;
+    padding-top: 6vmax;
+    height:5vmax;
+}
+.margin-box{
+    margin: auto;
+    width: 780vmax;
+    height: 40vmax;
+    display: flex;
+    flex-direction: column;
+    align-items:end;
+    justify-content: center;
+    background-color: #3cb0ee;
+}
+.margin-title{
+    font-size: larger;
+    padding-top: 1vmax;
+    height: 4vmax;
+}
+.border-box{
+    margin: auto;
+    width: 70vmax;
+    height: 30vmax;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #01215d;
+    margin-top: 0;
+}
+.border-box p{
+    font-size: larger;
+    padding-left: 3vmax;
+    padding-top: 2vmax;
+    height: 4vmax;
+}
+.padding-box{
+    margin: auto;
+    width: 60vmax;
+    height: 20vmax;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #4b78b3;
+    margin-top: 0;
+}
+.padding-box p{
+    font-size: larger;
+    padding-left: 0;
+    padding-top: 1vmax;
+    padding-left: 3vmax;
+    height: 3vmax;
+}
+.content-box{
+    margin: auto;
+    width: 50vmax;
+    height: 10vmax;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #e89519;
+    margin-top:0vmax;
+    
+}
+.content-box p{
+    
+    text-align: center;
+    font-size:1vmax;
+    padding-left: 0;
+    padding-top: 3vmax;
+}
+.inner-content-box1{
+display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+.inner-content-box1 p{
+    padding-top: 6vmax;
+    font-size: larger;
+}
+p.height{
+    text-align: left;
+    writing-mode: vertical-rl;
+    padding-top:2vmax;
+    padding-right: 1.5vmax;
+    margin: 0;
+    height:20%;
+    position: absolute;
+    top:20vmax;
+    left:-26vmax;
+    
+}
+p.width{
+    padding-top: 0;
+    text-align: left;
+    padding-bottom: 1vmax;
+    padding-left: 1.5vmax;
+}
+span{
+    display: inline-block;
+    border: 1px solid white;
+    padding: 0;
+    margin: 0;
+    width: 43%;
+    height: 0;
+}
+
+span.height{
+    display: inline-block;
+    border: 1px solid white;
+    padding: 0;
+    margin: 0;
+    width: 0;
+    height: 45%;
+}

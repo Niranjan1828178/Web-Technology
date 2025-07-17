@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, sans-serif;
+    font-size: larger;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+header{
+    background-color: red;
+    width: 100vw;
+    height: 10vh;
+}
+nav{
+    background-color: rgb(53, 149, 204);
+    width: 100vw;
+    height: 10vh;
+}
+body>div{
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+section{
+    width: 70vw;
+    height:35vh ;
+    background-color: rgb(236, 201, 72);
+}
+article{
+     width: 70vw;
+    height:35vh ;
+    background-color: rgb(232, 149, 33);
+}
+aside{
+    width: 30vw;
+    height: 70vh;
+    background-color: rgb(200, 40, 211);
+}
+footer{
+    background-color: black;
+    width: 100vw;
+    height: 10vh;
+    color: white;
+}
