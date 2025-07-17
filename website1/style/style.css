@@ -3,8 +3,7 @@
   padding: 0;
 }
 body {
-  height: 17000px;
-  background-color: yellow;
+  height: 8000px;
 }
 nav {
   width: 85%;
@@ -459,11 +458,6 @@ section > hr {
   padding-top: 70px;
 }
 
-/* .status-details>.line{
-  width: 0px;
-  height:80%;
-  border: 1px solid black;
-} */
 
 
 .details{
@@ -566,6 +560,7 @@ gap: 10px;
   height: 500px;
   justify-content: space-between;
   margin-top:50px ;
+  gap:30px;
 }
 
 .welcome-cards>div{
@@ -578,7 +573,7 @@ gap: 10px;
   box-shadow: 2px 2px 10px rgb(78, 77, 77);
   padding: 10px;
   padding-top: 10px;
-  transition-duration: 0.5s;
+  transition-duration: 0.2s;
 }
 
 .welcome-cards>div>img{
@@ -610,34 +605,64 @@ gap: 10px;
   transform: scale(1.05);
 }
 
-.end-welcomming{
-  background-color: rgb(74, 6, 105) ;
-  width: 100%;
-  height: 200px;
-  position: relative;
-  top: -300px;
-  /* border-bottom-left-radius: 50%; */
-  /* border-bottom-right-radius: 50%; */
-  z-index: -1;
-}
 .guide{
   width: 100%;
-  height: 300px;
-  background-color: rgb(108, 71, 124);
+  height: 350px;
+  background-color: rgb(74, 6, 105) ;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
   top: -100px;
-    border-bottom-left-radius: 25%;
-  border-bottom-right-radius: 25%;
+ border-bottom-left-radius: 50% 60px;
+border-bottom-right-radius: 50% 60px;
   z-index: 0;
 }
 
 .guide>header{
-  font-size: 40px;
+  font-size: 45px;
   color: white;
   font-weight: 600;
   font-family: Arial, Helvetica, sans-serif;
+}
+.guide>.cards{
+  padding-top: 10px;
+  height: 50px;
+  gap: 20px;
+}
+.guide>.cards>.card1{
+  background-color: transparent;
+  border-color: white;
+  color: white;
+  width:max-content;
+  font-size: 20px;
+}
+.guide>.cards>.card2{
+  background-color: white;
+  color:  rgb(74, 6, 105) ;
+  width:max-content;
+  font-size: 20px;
+}
+
+footer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 50px;
+  position: relative;
+  top: -80px;
+}
+footer>div{
+  padding-left: 20px;
+  font-size: 20px;
+}
+.icons{
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+  align-items: center;
+  justify-content: space-around;
 }
