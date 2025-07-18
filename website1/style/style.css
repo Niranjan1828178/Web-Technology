@@ -39,8 +39,8 @@ nav > div > a,
   font-family: "Times New Roman", Times, serif;
   width: max-content;
 }
-.search>p:hover{
-text-decoration: underline;
+.search > p:hover {
+  text-decoration: underline;
 }
 .search {
   display: flex;
@@ -192,7 +192,7 @@ section > hr {
   height: 500px;
   border-radius: 50%;
   background-color: rgb(6, 143, 58);
-  animation: change-color ;
+  animation: change-color;
   animation-timeline: --section-scroll;
 }
 .square {
@@ -202,7 +202,7 @@ section > hr {
   width: 273.5px;
   height: 287px;
   background-color: rgb(5, 144, 59);
-  animation: change-color ;
+  animation: change-color;
   animation-timeline: --section-scroll;
 }
 
@@ -363,13 +363,29 @@ section > hr {
 .video-container > div {
   width: 25%;
   height: 90%;
-  background-color: rgb(97, 189, 242);
+  /* background-color: rgb(97, 189, 242); */
   border-radius: 30px;
   transition-property: width;
   transition-duration: 1.2s;
   align-items: end;
   display: flex;
   justify-content: end;
+}
+.video-container >.video1{
+  background-image: url("https://helpx.adobe.com/content/dam/help/en/photoshop/how-to/create-animated-gif/jcr_content/main-pars/image_4389415/create-animated-gif_3a-v2.gif");
+  background-size: cover;
+}
+.video-container >.video2{
+  background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/1400/091089194042773.661d38a331980.gif");
+  background-size: cover;
+}
+.video-container >.video3{
+  background-image: url("https://www.itms.com/wp-content/uploads/2021/03/NEWS_GIFs_on_Social_Media-1.gif");
+  background-size: cover;
+}
+.video-container >.video4{
+  background-image: url("https://nurseslabs.com/wp-content/uploads/2015/03/reactiongifs-56.gif");
+  background-size: cover;
 }
 
 .video-container > .video1:hover {

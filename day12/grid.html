@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+     
+      body{
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        grid-template-areas: "nav" "main" "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 8fr 1fr;
+      }
+        nav {
+            grid-area: nav;
+            background-color: lightblue;
+        }
+       
+      
+        footer {
+            grid-area: footer;
+            background-color: lightgray;
+        }
+        body > div {
+            grid-area: main;
+            display: grid;
+            grid-template-columns: 5fr 1fr;
+            grid-row:1fr;
+        }
+        section {
+            display: grid;
+            grid-row: repeat(3, 1fr);
+            gap: 1px;
+        }
+        article {
+            background-color: lightgreen;
+          
+        }
+        aside{
+            background-color: lightcoral;
+        }
+        @media(max-width: 720px) {
+            body>div{
+                grid-template-columns: 1fr;
+                grid-row: 5fr 1fr;
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <nav>Nav</nav>
+    <div>
+        <section>
+            <article>Article1</article>
+            <article>Article2</article>
+            <article>Article3</article>
+        </section>
+        <aside>Aside</aside>
+    </div>
+    <footer>Footer</footer>
+  </body>
+</html>
