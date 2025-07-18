@@ -39,6 +39,9 @@ nav > div > a,
   font-family: "Times New Roman", Times, serif;
   width: max-content;
 }
+.search>p:hover{
+text-decoration: underline;
+}
 .search {
   display: flex;
   flex-direction: row;
